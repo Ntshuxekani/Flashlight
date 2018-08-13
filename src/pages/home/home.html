@@ -7,8 +7,13 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-item>
+    <span>
+      The Flashlight is: {{isOn ?'On':'off'}}
+    </span>
+  </ion-item>
+ <button ion-button color="secondary" (tap)="switchOn()">Switch On</button>
+ <button ion-button color="primary" (tap)="switchOff()">Switch Off</button>
+ <button ion-button color="danger" (tap)="toggle()">Toggle</button>
 </ion-content>
